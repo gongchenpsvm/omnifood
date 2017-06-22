@@ -110,7 +110,25 @@ header{
     transform: translate(-50%, -50%);
 }
 
+/*------links------*/
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
 
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: none;   /*Instead of 1px solid transparent*/
+    transition: color 1s, border-bottom 1s;
+}
+/*------buttons------*/
+.btn-app:link,
+.btn-app:visited{
+    border-bottom: none;
+}
 
 .btn:link,
 .btn:visited{
@@ -288,21 +306,26 @@ header{
 }
 
 /*------Cities------*/
-/*
-.cities-info{
-   margin-bottom: 33px;
+.section-cities img{
+    width: 100%;/*Width of parent*/
+    height: 150px;
+    transform: scale(1);
+    transition: transform 0.5s;
+    margin-bottom: 10px;
 }
-.cities-info div{
+.section-cities img:hover{
+    transform: scale(1.56);
+    transition: transform 1s;
+}
+.city-feature {
+    margin: 10px 10px;
+}
+.city-feature i{
     display: inline-block;
-    text-align: center;
-     height: 10px;
-     width: 10px;
-    float: left;
-    margin-right: 20px;
-    padding: 5px;
+    font-size: 120%;
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-top: -3px;
+    color: #e67e22;
+    vertical-align: middle;/*Adjust the images' relative heighgts. Does work a little*/
 }
-.cities-step img{
-    height: 130px;
-     width: auto;
-}
-*/
