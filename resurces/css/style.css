@@ -441,3 +441,7 @@ cite img{
 .plan-box i{
     margin-right: 10px;
 }
+
+.section-form input{
+    width = 200%;
+}
