@@ -494,3 +494,78 @@ input[type=checkbox]{
 *:focus{
     outline: none;
 }
+
+/*------footer------*/
+footer{
+    background-color: #333;
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-of-type,
+.social-links li:last-of-type{
+    margin-right: 0;
+}
+
+.footer-nav li :link,
+.footer-nav li :visited,
+.social-links li :visited,
+.social-links li :link{
+    text-decoration: none;
+    border: none;
+    color: #888;
+}
+
+.footer-nav li :hover{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 180%;
+}
+
+.ion-social-twitch:hover{
+    color: #6441A4;
+}
+
+.ion-social-linkedin:hover{
+    color:#007bb5;
+}
+
+.ion-social-github:hover{
+    color:#000000;
+}
+
+.ion-social-hackernews:hover{
+    color: #ff6600;
+}
+
+.ion-social-twitch,
+.ion-social-linkedin,
+.ion-social-github,
+.ion-social-hackernews:hover{
+    transition: color 0.7s;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    line-height: 50px;
+}
